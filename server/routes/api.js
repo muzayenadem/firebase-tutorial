@@ -8,6 +8,10 @@ const addAdmin = require('../controller/admin/addAdmin');
 const admins = require('../controller/admin/admins');
 
 // Example route to get data
+
+router.get('/').get((req,res)=>{
+    res.send('Helloo Muzayen Adem')
+})
 router.route('/userdata').get(userProfile)
 router.route('/admins').get(admins)
 // Example route to add data
