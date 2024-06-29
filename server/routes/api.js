@@ -12,10 +12,10 @@ const admins = require('../controller/admin/admins');
 router.get('/').get((req,res)=>{
     res.send('Helloo Muzayen Adem')
 })
-router.route('/userdata').get(userProfile)
-router.route('/admins').get(admins)
+//router.route('/userdata').get(userProfile)
+//router.route('/admins').get(admins)
 // Example route to add data
-router.route('/register').post(register)
+//router.route('/register').post(register)
 //add admin 
-router.route('/addadmin').post(addAdmin)
+//router.route('/addadmin').post(addAdmin)
 module.exports = router;
