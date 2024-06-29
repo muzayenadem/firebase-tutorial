@@ -2,7 +2,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const router = require('./routes/api')
+//const router = require('./routes/api')
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -11,9 +11,11 @@ app.use(cors());
 app.use(bodyParser.json());
 // Test Route
 // API Routes
-app.use(router);
+//app.use(router);
+app.get('/',(req,res)=>{
+    res.send('Hello its me')
+})
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
 
-// app.listen(PORT, () => {
-//     console.log(`Server is running on port ${PORT}`);
-//   });
-module.exports = app
