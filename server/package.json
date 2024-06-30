@@ -2,10 +2,10 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "api/server.js",
+  "main": "public/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon api/server.js",
+    "start": "nodemon puplic/server.js",
     "build":"npm install"
   },
   "keywords": [],
